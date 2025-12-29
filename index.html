@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumentasi Panel Admin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <nav class="sidebar">
+        <h2 class="sidebar-header">Dokumentasi Admin</h2>
+        <ul>
+            <li><a href="#intro">Introduksi</a></li>
+            <li><a href="#login">Login & Akses</a></li>
+            <li><a href="#dashboard">Ringkasan Dasbor</a></li>
+            <li><a href="#rekening-admin">Manajemen Rekening Admin</a></li>
+            <li><a href="#staffs">Manajemen Staff</a></li>
+            <li><a href="#gaji">Manajemen Gaji Staff</a></li>
+            <li><a href="#proses-gaji">Proses Gaji Staff</a></li>
+            <li><a href="#bonus-staff">Manajemen Bonus Staff</a></li>
+            <li><a href="#bonus-periode-berjalan">Manajemen Bonus Periode ( Berjalan )</a></li>
+            <li><a href="#bonus-periode-locked">Manajemen Bonus Periode ( Terkunci )</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        
+        <section id="intro">
+            <h1>Panduan Admin Panel Administrasi</h1>
+            <p>Selamat datang di panduan resmi untuk panel admin administrasi. Panduan ini akan membantu Anda mengelola staff, rekening admin, gaji staff, dan bonus staff dan juga membantu Anda untuk memproses gaji staff.</p>
+        </section>
+
+        <hr>
+
+        <section id="login">
+            <img src="/images/login.png" alt="">
+            <h2>Login & Akses</h2>
+            <p>Untuk mengakses panel, masuk ke <code>/auth/webmaster-login</code> di browser Anda.</p>
+            <ul>
+                <li><strong>Username:</strong> Username yang diberikan IT support</li>
+                <li><strong>Password:</strong> Password yang diberikan IT support</li>
+            </ul>
+            <div class="note">
+                <strong>Note:</strong> Jika Anda kehilangan password, silakan hubungi IT support secara langsung.
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="dashboard">
+            <h2>Ringkasan Dasbor</h2>
+            <img src="/images/dasbore.png" alt="">
+            <p>Setelah login, anda akan melihat dasbor utama. Terdapat fitur sebagai berikut :</p>
+            <ol>
+                <li><strong>Status Gaji :</strong> Data gaji per periode pada saat ini yang sudah dan belum diproses.</li>
+                <li><strong>Kalender:</strong> Kalender bulan dan periode per saat ini.</li>
+                <li><strong>Tombol Menu:</strong> Tombol menu untuk mengakses fitur-fitur yang ada pada panel.</li>
+            </ol>
+            </section>
+
+        <hr>
+
+        <section id="rekening-admin">
+            <h2>Manajemen Rekening Admin</h2>
+            <img src="/images/adm.png" alt="">
+            <p>Anda dapat melakukan tindakan berikut di menu rekening admin:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aksi</th>
+                        <th>Deskripsi</th>
+                        <th style="width: 80px; text-align: center;">Contoh</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tambah Bank ( Plus )</td>
+                        <td>
+                            Tambah data rekening admin ( Jenis bank, nama rekening, nomor rekening dan status ).
+                        </td>
+                        <td>
+                            <button class="img-trigger-btn" title="Lihat Contoh Gambar" data-src="/images/adm-add.png">
+                                <i class="fa-solid fa-image"></i>
+                            </button>
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td>Edit ( Pensil )</td>
+                        <td>
+                            Set dan ubah data rekening admin ( Jenis bank, nama rekening, nomor rekening dan status ).
+                        </td>
+                        <td>
+                            <button class="img-trigger-btn" title="Lihat Contoh Gambar" data-src="/images/adm-edit.png">
+                                <i class="fa-solid fa-image"></i>
+                            </button>
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td>Hapus ( Tong Sampah )</td>
+                        <td>
+                            Hapus data rekening admin.
+                        </td>
+                        <td>
+                            <button class="img-trigger-btn" title="Lihat Contoh Gambar" data-src="/images/adm-del.png">
+                                <i class="fa-solid fa-image"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Status ( Dropdown )</td>
+                        <td>
+                            Saring rekening admin dari status ( aktif / non-aktif / semua ).
+                        </td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Saring ( Dropdown )</td>
+                        <td>
+                            Saring rekening admin berdasarkan jenis bank.
+                        </td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="staffs">
+            <h2>Manajemen Staff</h2>
+            <img src="/images/staff.png" alt="">
+            <p>Anda dapat melakukan tindakan berikut di menu staff:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aksi</th>
+                        <th>Deskripsi</th>
+                        <th style="width: 80px; text-align: center;">Contoh</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Edit ( Pensil )</td>
+                        <td>
+                            Set dan ubah rekening gaji staff ( Jenis bank, nama rekening dan nomor rekening ).
+                        </td>
+                        <td>
+                            <button class="img-trigger-btn" title="Lihat Contoh Gambar" data-src="/images/staff-edit.png">
+                                <i class="fa-solid fa-image"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Status ( Dropdown )</td>
+                        <td>
+                            Saring staff dari status ( aktif / non-aktif / semua ).
+                        </td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Saring ( Dropdown )</td>
+                        <td>
+                            Saring staff berdasarkan situs.
+                        </td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <p class="bold-txt">Fitur sinkronisasi data staff manual dapat diakses melalui tombol yang terletak di navbar kanan, tepat di sebelah kiri menu pemilihan bahasa. 
+                <button style="font-size: 0.5rem; padding: 5px 5px;" class="img-trigger-btn" title="Lihat Contoh Gambar" data-src="/images/manual-sync.png">
+                    <i class="fa-solid fa-image"></i>
+                </button>
+            </p>
+        </section>
+
+        <hr>
+
+        <section id="gaji">
+            <h2>Manajemen Gaji Staff</h2>
+            <img src="/images/gaji.png" alt="">
+            <p>Anda dapat melakukan tindakan berikut di menu gaji staff:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aksi</th>
+                        <th>Deskripsi</th>
+                        <th style="width: 80px; text-align: center;">Contoh</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Edit ( Pensil )</td>
+                        <td>Set dan ubah nominal gaji dan subsidi staff.</td>
+                        <td style="text-align: center;">
+                            <button class="img-trigger-btn" title="Lihat Contoh Gambar" data-src="/images/gaji-edit.png">
+                                <i class="fa-solid fa-image"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Detail ( Mata )</td>
+                        <td>Catatan riwayat perubahan gaji staff.</td>
+                        <td style="text-align: center;">
+                            <button class="img-trigger-btn" title="Lihat Contoh Gambar" data-src="/images/gaji-log.png">
+                                <i class="fa-solid fa-image"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ubah Gaji Massal</td>
+                        <td>Set dan ubah nominal gaji dan subsidi staff secara massal.</td>
+                        <td style="text-align: center;">
+                            <button class="img-trigger-btn" title="Lihat Contoh Gambar" data-src="/images/gaji-mass.png">
+                                <i class="fa-solid fa-image"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ubah Pengaturan Subsidi</td>
+                        <td>Set dan ubah pengaturan subsidi.</td>
+                        <td>
+                            <button class="img-trigger-btn" title="Lihat Contoh Gambar" data-src="/images/subsidi.png">
+                                <i class="fa-solid fa-image"></i>
+                            </button>
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td>Ubah Tanggal Sah CS ( kalender )</td>
+                        <td>Set dan ubah tanggal sah CS staff.</td>
+                        <td>
+                            <button class="img-trigger-btn" title="Lihat Contoh Gambar" data-src="/images/sah-cs.png">
+                                <i class="fa-solid fa-image"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Saring ( Dropdown )</td>
+                        <td>Saring staff berdasarkan situs.</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="proses-gaji">
+            <h2>Proses Gaji Staff</h2>
+            <img src="/images/processing.png" alt="">
+            <p>Anda dapat melakukan tindakan berikut di menu proses gaji staff:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aksi</th>
+                        <th>Deskripsi</th>
+                        <th style="width: 80px; text-align: center;">Contoh</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Proses ( Biru )</td>
+                        <td>
+                            Konfirmasi pembayaran gaji staff.
+                        </td>
+                        <td>
+                            <button class="img-trigger-btn" title="Lihat Contoh Gambar" data-src="/images/pro-con.png">
+                                <i class="fa-solid fa-image"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Detail ( Centang Hijau )</td>
+                        <td>
+                            Riwayat lengkap pembayaran gaji staff.
+                        </td>
+                        <td>
+                            <button class="img-trigger-btn" title="Lihat Contoh Gambar" data-src="/images/pro-snap.png">
+                                <i class="fa-solid fa-image"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ekspor ke Excel</td>
+                        <td>
+                            Download dan simpan data gaji yang sudah dibayar ke excel sesuai dengan periode yang dipilih.
+                        </td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Perbarui Data Gaji ( Refresh )</td>
+                        <td>
+                            Manual perbarui data gaji staff.
+                        </td>
+                        <td>
+                            <button class="img-trigger-btn" title="Lihat Contoh Gambar" data-src="/images/pay-gen.png">
+                                <i class="fa-solid fa-image"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pilih Periode ( Dropdown )</td>
+                        <td>
+                            Pilih periode bulan yang ingin dilihat.
+                        </td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Saring ( Dropdown )</td>
+                        <td>
+                            Saring staff berdasarkan situs.
+                        </td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="bonus-staff">
+            <h2>Manajemen Bonus Staff</h2>
+            <img src="/images/bonus.png" alt="">
+            <p>Anda dapat melakukan tindakan berikut di menu bonus staff:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aksi</th>
+                        <th>Deskripsi</th>
+                        <th style="width: 80px; text-align: center;">Contoh</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Edit ( Pensil )</td>
+                        <td>
+                            Set dan ubah bonus mentah staff.
+                        </td>
+                        <td>
+                            <button class="img-trigger-btn" title="Lihat Contoh Gambar" data-src="/images/bonus-edit.png">
+                                <i class="fa-solid fa-image"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ubah Bonus Massal</td>
+                        <td>
+                            Set dan ubah bonus mentah staff secara massal.
+                        </td>
+                        <td>
+                            <button class="img-trigger-btn" title="Lihat Contoh Gambar" data-src="/images/bonus-mass.png">
+                                <i class="fa-solid fa-image"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Saring ( Dropdown )</td>
+                        <td>
+                            Saring staff berdasarkan situs.
+                        </td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="bonus-periode-berjalan">
+            <h2>Manajemen Bonus Periode ( Berjalan ) </h2>
+            <img src="/images/bonperiod.png" alt="">
+            <p>Anda dapat melakukan tindakan berikut di menu bonus periode:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aksi</th>
+                        <th>Deskripsi</th>
+                        <th style="width: 80px; text-align: center;">Contoh</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hitung Ulang Bonus ( Refresh )</td>
+                        <td>
+                            Menghitung kembali bonus periode staff secara manual.
+                        </td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Saring ( Dropdown )</td>
+                        <td>
+                            Saring bonus periode staff berdasarkan tahun, periode, dan situs.
+                        </td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="bonus-periode-locked">
+            <h2>Manajemen Bonus Periode ( Terkunci ) </h2>
+            <img src="/images/per-lock.png" alt="">
+            <p>Anda dapat melakukan tindakan berikut di menu bonus periode:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aksi</th>
+                        <th>Deskripsi</th>
+                        <th style="width: 80px; text-align: center;">Contoh</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dikunci</td>
+                        <td>
+                            Mengubah bonus staff secara manual.
+                        </td>
+                        <td>
+                            <button class="img-trigger-btn" title="Lihat Contoh Gambar" data-src="/images/per-final.png">
+                                <i class="fa-solid fa-image"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Detail ( Mata )</td>
+                        <td>
+                            Melihat detail bonus periode staff.
+                        </td>
+                        <td>
+                            <button class="img-trigger-btn" title="Lihat Contoh Gambar" data-src="/images/final-detail.png">
+                                <i class="fa-solid fa-image"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Saring ( Dropdown )</td>
+                        <td>
+                            Saring bonus periode staff berdasarkan tahun, periode, dan situs.
+                        </td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2025 Admin Panel Documentation. All rights reserved.</p>
+        </footer>
+
+    </main>
+
+<div id="imgModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
